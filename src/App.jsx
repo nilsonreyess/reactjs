@@ -1,8 +1,12 @@
+import './App.css'
+import Routes from './routes/routes.jsx'
 
 function App() {
   return (
     <>
-        <p>Hola...</p>
+        <h2 className='title'>📺</h2>
+        <h2 className='title'>Películas Chigüiro</h2>
+        <Routes />
     </>
   )
 }
