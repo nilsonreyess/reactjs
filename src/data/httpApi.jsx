@@ -1,4 +1,4 @@
-const API = "https://api.themoviedb.org/3";
+import {API} from "../utils/constApp.jsx";
 
 export function httpApi(path) {
     return fetch(API + path, {
