@@ -1,11 +1,9 @@
-import {ContentCardMovie} from "../components/ContentCardMovie.jsx"
+import {ContentCardMovie} from "../components/ContentCardMovie.jsx";
 
-function LandingPage() {
+export function LandingPage() {
     return(
         <>
             <ContentCardMovie />
         </>
-    )
+    );
 }
-
-export default LandingPage

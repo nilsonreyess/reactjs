@@ -1,6 +1,21 @@
+import {useEffect, useState} from "react";
+import {httpApi} from "../data/httpApi.jsx";
+import {CardMovie} from "./CardMovie.jsx";
+import "./ContentCardMovie.css";
 
-function ContentCardMovie() {
-    return(<h2>Todas las Películas</h2>)
+export function ContentCardMovie() {
+    const [movies, setMovies] = useState([]);
+    useEffect(() => {
+        httpApi("/discover/movie").then((data) => {
+            setMovies(data.results);
+        });
+    }, []);
+
+    return(
+        <ul className="container">
+            {movies.map((movie) => (
+                <CardMovie key={movie.id} movie={movie}/>
+            ))}
+        </ul>
+    );
 }
-
-export default ContentCardMovie
