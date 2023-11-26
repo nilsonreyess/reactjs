@@ -4,7 +4,7 @@ export function httpApi(path) {
     return fetch(API + path, {
         headers: {
             Authorization:
-                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NzUzN2ZmMTlmMzgxZGQ3YjY3ZWVlMWVhOGI4MTY0YSIsInN1YiI6IjVlM2ExNmU1MGMyNzEwMDAxODc1NTI4MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nOpZ_nBtA93tbzr6-rxD0760tssAAaSppyjRv9anArs",
+                "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYTQzMGM0MmNkMzdjY2Q4YzIzNGMyMTI2NTBmYTEzNSIsInN1YiI6IjY1NjIyY2EwMDI4ZjE0MDBlMTMwMjM4ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.6ors4nY5DeZXYyu_zYoQEveakDc9QRG9fRz8OeC6Ltk",
                 "Content-Type": "application/json;charset=utf-8"
         },
     }).then((result) => result.json());

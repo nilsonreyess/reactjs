@@ -33,3 +33,4 @@ export function DetailMovie() {
         </div>
     );
 }
+//https://www.youtube.com/watch?v=5iiF_hxhLB4
